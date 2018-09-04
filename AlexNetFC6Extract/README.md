@@ -20,7 +20,7 @@
     alexnet:remove()
     print(alexnet)
  ```
-5. After the FC6 feature has been extracted, we can use the below simple network to get the confidence for each view of the shape in the training set.
+5. After the FC6 feature has been extracted, we can use the below simple network to train an image level classfication model to get the confidence for each view of the shape in the training set.
 
 ```
    agent = nn.Sequential()
