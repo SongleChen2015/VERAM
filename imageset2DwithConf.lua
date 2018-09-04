@@ -168,34 +168,6 @@ function ImageSet2DWithConf:loadData(file_name, download_url)
 end
 
 
-function ImageSet2DWithConf:loadhdf5dataslow(filepath, classnumber)
-
-    local imgdata = torch.Tensor()
-    local labledata = torch.Tensor()
-    local hdf5_data = hdf5.open(filepath, 'r')
-    for i = 1, classnumber do
-        print('load calss '..i..'...')
-        local dset_name = string.format('data/%d', i)
-        local samplenum = hdf5_data:read(dset_name):dataspaceSize()[1]
-        local classdata = hdf5_data:read(dset_name):partial({1, samplenum}, {1, self._height}, {1, self._width},{1,self._features})
-        local classlable = torch.Tensor(samplenum,1):fill(1*i)
-        if i == 1 then
-           imgdata = classdata:clone();
-           labledata = classlable:clone();
-        else
-       
-           imgdata = torch.concat({imgdata,classdata},1)
-           labledata = torch.concat({labledata, classlable}, 1)
-        end        
-    end
-    
-    local viewData =  imgdata:view(torch.LongStorage{(#imgdata)[1], (#imgdata)[2], (#imgdata)[3], (#imgdata)[4]})
-    local viewLable = labledata:view(torch.LongStorage{(#labledata)[1]})
-    
-    
-    return {viewData, viewLable}
-end
-
 function ImageSet2DWithConf:loadhdf5data(filepath, classnumber)
 
     local imgdata = torch.Tensor()
