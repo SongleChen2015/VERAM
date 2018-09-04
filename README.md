@@ -7,15 +7,17 @@ This code is a Torch implementation of VERAM, a recurrent attention model capabl
 ## Citation
 If you find our work useful in your research, please consider citing:	
 
-	@article {xu_siga16,
-	title = {3D Attention-Driven Depth Acquisition for Object Identification},
-        author = {Kai Xu and Yifei Shi and Lintao Zheng and Junyu Zhang and Min Liu and Hui Huang and Hao Su and Daniel Cohen-Or 	 and Baoquan Chen},
-     	journal = {ACM Transactions on Graphics (Proc. of SIGGRAPH Asia 2016)},
-    	volume = {35},
-    	number = {6},
-    	pages = {to appear},
-    	year = {2016}
-	}
+	@ARTICLE{8444765, 
+        author={S. Chen and L. Zheng and Y. Zhang and Z. Sun and K. Xu}, 
+        journal={IEEE Transactions on Visualization and Computer Graphics}, 
+        title={VERAM: View-Enhanced Recurrent Attention Model for 3D Shape Classification}, 
+        year={2018}, 
+        volume={}, 
+        number={}, 
+        pages={1-1}, 
+        doi={10.1109/TVCG.2018.2866793}, 
+        ISSN={1077-2626}, 
+        month={},}
 
 ## Requirements
  1. This code is written in lua and requires [Torch](http://torch.ch/). You should setup torch environment.
