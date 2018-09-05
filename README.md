@@ -14,7 +14,7 @@ If you find our work useful in your research, please consider citing:
         year={2018}, 
         volume={}, 
         number={}, 
-        pages={1-1}, 
+        pages={1-14}, 
         doi={10.1109/TVCG.2018.2866793}, 
         ISSN={1077-2626}, 
         month={},}
