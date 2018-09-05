@@ -24,8 +24,8 @@ If you find our work useful in your research, please consider citing:
 
  2. if you'd like to train on GPU/CUDA, you have to get the cutorch and cunn packages:
  ```
-	 $ luarocks install cutorch	
-	 $ luarocks install cunn
+     $ luarocks install cutorch	
+     $ luarocks install cunn
  ```
  
  3. Install other torch packages (nn, dpnn, rnn, image, etc.): ``` $ ./scripts/dependencies_install.sh ```
@@ -33,46 +33,30 @@ If you find our work useful in your research, please consider citing:
 ## Usage 
 ### Data 
 To Train a VERAM model, 3 data files need to be prepared according to the instructions in the fold 'AlexNetFC6Extract', namely:
-
+```
     (1) The visual features for each view of shapes in the training set
     (2) The viusal features for each view of shapes in the testing set
     (3) the confidence for each view of shapes in the training set.
-
+```
 The format of the data is hdf5 and each shape category is saved in the dataset 'data\i', i is the category index. The data structure is 'number of shapes in the this category'x12x12x4096, and the data is loaded by imageset2DwithConf.lua.
 
 We have provided the prepared the training and testing data of ModelNet10, the testing data of ModelNet40 in the fold data, they can be used directly.
     
 
 ### Train 
-To train a MV-RNN model to classify object for root node:
+To train a VERAM model to classify 3D shapes in ModelNet10 or ModelNet40, please download data files according to the instrction in fold 'data', and then run:
 ```
-$ th train.lua 
+     (1) $ th ModelNet10AlexTrain.lua 
+     (2) $ th ModelNet10AlexTrain.lua
 ```
- Run `th train.lua -h` to see additional command line options that may be specified.
  
- If you want to train hierarchy MV-RNN models for every node of all classes, run:
-   ./scripts/train_hierarchy_mvrnn.sh
  
 ### Evaluation
 The trained VERAM models with 3, 6, 9 views respectively can be downloaded according to the instruction in fold 'model'. To evulate the trained model, just run the lua files in fold 'evaluation', for example:
  ```
-$ th evaluateModelNet40-AlexNet-9Views-0.937196InstanceLevelAccuracy.lua 
+     $ th evaluateModelNet40-AlexNet-9Views-0.937196InstanceLevelAccuracy.lua 
 ```
 You can see the details of the classification result, including the predicated category and probability of each shape, the total number, correctly classified number and accuracy of each category.
-
-### Example output by retrive_demo.lua
-<br>
- 1. Example of ten views comparision betwwen input and retrive data 
-<br>
- <p>   first row for input data, second row for retrive data <p/>
- (1) <br><img src="images/compare1.png" width="80%"><br>  
- (2) <br><img src="images/compare2.png" width="80%">
-
-<br>
- 2. Example of view sequence
-<br>
- (1)<br><img src="images/view_seqs1.png" width="60%"><br> 
- (2)<br><img src="images/view_seqs2.png" width="60%">
 
 ## Acknowledgement
 Torch implementation in this repository is based on the code from Nicholas Leonard's recurrent model of visual attention, which is a clean and nice GitHub repo using Torch.
