@@ -1,5 +1,5 @@
 # VERAM:View-Enhanced-Recurrent-Attention-Model-for-3D-Shape-Classification
-Songle Chen, Lintao Zheng, Yan Zhang, Zhixin Sun, Kai Xu
+Songle Chen, Lintao Zheng, Yan Zhang, Zhixin Sun, Kai Xu*
 
 ## Introduction
 This code is a Torch implementation of VERAM, a recurrent attention model capable of actively selecting a sequence of views for highly accurate 3D shape classification. VERAM addresses an important issue commonly found in existing attention-based models, i.e., the unbalanced training of the subnetworks corresponding to next view estimation and shape classification. Details of the work can be found [here](http://kevinkaixu.net/projects/veram.html).
@@ -34,9 +34,9 @@ If you find our work useful in your research, please consider citing:
 ### Data 
 To Train a VERAM model, 3 data files need to be prepared according to the instructions in the fold AlexNetFC6Extract, namely:
 
-    1) The visual features for each view of shapes in the training set
-    2) The viusal features for each view of shapes in the testing set
-    3) the confidence for each view of shapes in the training set.
+    (1) The visual features for each view of shapes in the training set
+    (2) The viusal features for each view of shapes in the testing set
+    (3) the confidence for each view of shapes in the training set.
 
 The format of the data is hdf5 and each shape category is saved in the section 'data\i', i is the category index. The data structure is 'number of shapes in the this category'x12x12x4096, and the data is read by imageset2DwithConf.lua.
 
