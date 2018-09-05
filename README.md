@@ -58,5 +58,13 @@ The trained VERAM models with 3, 6, 9 views respectively can be downloaded accor
 ```
 You can see the details of the classification result, including the predicated category and probability of each shape, the total number, correctly classified number and accuracy of each category.
 
+Below are the classification results VERAM achieved on ModelNet40 test data.
+
+|   Accuracy     |  3 views  |  6 views  |  9 views  |
+| -------------- |:---------:|:---------:|:---------:|
+| instance-level | 92.3825%  | 93.3144%  |  93.7196% | 
+|  class-level   | 90.8087%  | 91.6291%  |  92.1244% |
+
+
 ## Acknowledgement
 Torch implementation in this repository is based on the code from Nicholas Leonard's recurrent model of visual attention, which is a clean and nice GitHub repo using Torch.
