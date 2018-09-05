@@ -32,7 +32,7 @@ If you find our work useful in your research, please consider citing:
 
 ## Usage 
 ### Data 
-To Train a VERAM model, 3 data files need to be prepared according to the instructions in the fold 'AlexNetFC6Extract', namely:
+To Train a VERAM model, 3 data files need to be prepared according to the instructions in the folder 'AlexNetFC6Extract', namely:
 ```
     (1) The visual features for each view of shapes in the training set
     (2) The viusal features for each view of shapes in the testing set
@@ -40,11 +40,11 @@ To Train a VERAM model, 3 data files need to be prepared according to the instru
 ```
 The format of the data is hdf5 and each shape category is saved in the dataset 'data\i', i is the category index. The data structure is 'number of shapes in the this category'x12x12x4096, and the data is loaded by imageset2DwithConf.lua.
 
-We have provided the prepared the training and testing data of ModelNet10, the testing data of ModelNet40 in the fold data, they can be used directly.
+We have provided the prepared the training and testing data of ModelNet10, the testing data of ModelNet40 in the folder 'data', they can be used directly.
     
 
 ### Train 
-To train a VERAM model to classify 3D shapes in ModelNet10 or ModelNet40, please download data files according to the instrction in fold 'data', and then run:
+To train a VERAM model to classify 3D shapes in ModelNet10 or ModelNet40, please download data files according to the instrction in folder 'data', and then run:
 ```
   (1) $ th ModelNet10AlexTrain.lua 
   (2) $ th ModelNet10AlexTrain.lua
@@ -52,7 +52,7 @@ To train a VERAM model to classify 3D shapes in ModelNet10 or ModelNet40, please
  
  
 ### Evaluation
-The trained VERAM models with 3, 6, 9 views respectively can be downloaded according to the instruction in fold 'model'. To evulate the trained model, just run the lua files in fold 'evaluation', for example:
+The trained VERAM models with 3, 6, 9 views respectively can be downloaded according to the instruction in folder 'model'. To evulate the trained model, just run the lua files in folder 'evaluation', for example:
  ```
      $ th evaluateModelNet40-AlexNet-9Views-0.937196InstanceLevelAccuracy.lua 
 ```
