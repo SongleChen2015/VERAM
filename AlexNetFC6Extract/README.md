@@ -1,6 +1,6 @@
 1. Please download the caffe AlexNet model for feature extraction from the the link https://www.dropbox.com/sh/owk9wljp2vipwkk/AADQlsSzm9jMEScxYTQ57mUGa?dl=0&lst=
 
-2. Two files in AlexNetFC6Extract are listed as follows:
+2. Two files in fold 'AlexNetFC6Extract' are listed as follows:
 
     (1) bvlc_reference_caffenet.caffemodel
     
