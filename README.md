@@ -32,13 +32,13 @@ If you find our work useful in your research, please consider citing:
 
 ## Usage 
 ### Data 
-To Train a VERAM model, 3 data files need to be prepared according to the instructions in the fold AlexNetFC6Extract, namely:
+To Train a VERAM model, 3 data files need to be prepared according to the instructions in the fold 'AlexNetFC6Extract', namely:
 
     (1) The visual features for each view of shapes in the training set
     (2) The viusal features for each view of shapes in the testing set
     (3) the confidence for each view of shapes in the training set.
 
-The format of the data is hdf5 and each shape category is saved in the section 'data\i', i is the category index. The data structure is 'number of shapes in the this category'x12x12x4096, and the data is read by imageset2DwithConf.lua.
+The format of the data is hdf5 and each shape category is saved in the dataset 'data\i', i is the category index. The data structure is 'number of shapes in the this category'x12x12x4096, and the data is loaded by imageset2DwithConf.lua.
 
 We have provided the prepared the training and testing data of ModelNet10, the testing data of ModelNet40 in the fold data, they can be used directly.
     
@@ -54,18 +54,11 @@ $ th train.lua
    ./scripts/train_hierarchy_mvrnn.sh
  
 ### Evaluation
-We have trained all models(MV-RNN models) for every node of class chair(subclass1), you can see the evaluation results following opeartions below.
-To evulate the MV-RNN model for the root node:
+The trained VERAM models with 3, 6, 9 views respectively can be downloaded according to the instruction in fold 'model'. To evulate the trained model, just run the lua files in fold 'evaluation', for example:
  ```
-$ th eval_demo.lua 
+$ th evaluateModelNet40-AlexNet-9Views-0.937196InstanceLevelAccuracy.lua 
 ```
-You can see retrive examples by running:
-```
-$ th retrive_demo.lua
-```
-the results are saved in the folder `retrive_res`.
-(note: if encounter an error due to ViewSelect.lua, you can fix it by uncommenting the line 35 in ViewSelect.lua)
-<br>
+You can see the details of the classification result, including the predicated category and probability of each shape, the total number, correctly classified number and accuracy of each category.
 
 ### Example output by retrive_demo.lua
 <br>
