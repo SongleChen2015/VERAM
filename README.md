@@ -40,7 +40,7 @@ To Train and test a VERAM model, 3 data files need to be prepared according to t
 ```
 The format of the data is hdf5 and each shape category is saved in the dataset 'data\i', i is the category index. The data structure is 'number of shapes in this category'x12x12x4096, and the data is loaded by imageset2DwithConf.lua.
 
-We have provided the prepared the training and testing data of ModelNet10, the testing data of ModelNet40 in the folder 'data', they can be used directly.
+We have provided the training and testing data of ModelNet10, the testing data of ModelNet40 in the folder 'data', they can be used directly.
     
 
 ### Train 
