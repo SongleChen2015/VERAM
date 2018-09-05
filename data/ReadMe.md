@@ -1,6 +1,6 @@
 1. Please download the data for testing from the the link https://www.dropbox.com/sh/owk9wljp2vipwkk/AADQlsSzm9jMEScxYTQ57mUGa?dl=0&lst=
 
-2. The data files are listed below.
+2. The data files are in the folder 'data', listed below.
 
     (1) ModelNet40_AlexNetFC6_All144Views_Test.h5
     
