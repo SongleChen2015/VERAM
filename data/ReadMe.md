@@ -3,12 +3,15 @@
 2. The data files are in the folder 'data', listed below.
 
     (1) ModelNet10_AlexNetFC6_All144Views_Train.h5
+    
     --the data of FC6 features extracted from AlexNet for all 144 views of each shape in the training set of ModelNet10
      
     (2) ModelNet10_AlexNetFC6_All144Views_Test.h5
+    
     --the data of FC6 features extracted from AlexNet for all 144 views of each shape in the testing set of ModelNet10
      
     (3) ModelNet10_AlexNetFC6_All144Views_TrainData_Confidence.h5
+    
     --the data of confidence for all 144 views of each shape in the training set of ModelNet10
     
     (4) ModelNet40_AlexNetFC6_All144Views_Test.h5
@@ -20,9 +23,11 @@
     --the data of confidence for all 144 views of each shape in the training set of ModelNet40
     
     (6) ModelNet40_Test_ModelName.txt
+    
     --the model name of each shape in the testing set of ModelNet40.
     
     (7) ModelNet40Align.zip
+    
     --the aligned 3D shapes of ModelNet40.
     
 3. For space limitation, we don't upload the ModelNet40_AlexNetFC6_All144Views_Train.h5 to dropbox, corresponding to the data of FC6 features extracted from AlexNet for all 144 views of each shape in the training set of ModelNet40, about 20G. you can mail to the authors for the data.
