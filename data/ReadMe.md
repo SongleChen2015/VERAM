@@ -1,6 +1,7 @@
 1. Please download the data for training and testing from the link https://www.dropbox.com/sh/owk9wljp2vipwkk/AADQlsSzm9jMEScxYTQ57mUGa?dl=0&lst=
 
 2. The data files are in the folder 'data', listed below.
+
     (1) ModelNet10_AlexNetFC6_All144Views_Train.h5
     --the data of FC6 features extracted from AlexNet for all 144 views of each shape in the training set of ModelNet10
      
