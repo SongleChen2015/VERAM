@@ -3,7 +3,7 @@ Songle Chen, Lintao Zheng, Yan Zhang, Zhixin Sun, Kai Xu*
 
 ## Introduction
 This code is a Torch implementation of VERAM, a recurrent attention model capable of actively selecting a sequence of views for highly accurate 3D shape classification. VERAM addresses an important issue commonly found in existing attention-based models, i.e., the unbalanced training of the subnetworks corresponding to next view estimation and shape classification. Details of the work can be found [here](http://kevinkaixu.net/projects/veram.html).
-![prediction example](https://github.com/charlesq34/3dcnn.torch/blob/master/doc/teaser.png)
+![prediction example](https://github.com/SongleChen2015/VERAM/blob/master/VERAM.png)
 
 ## Citation
 If you find our work useful in your research, please consider citing:	
