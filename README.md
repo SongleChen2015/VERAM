@@ -32,7 +32,7 @@ If you find our work useful in your research, please consider citing:
 
 ## Usage 
 ### Data 
-To Train a VERAM model, 3 data files need to be prepared according to the instruction in the folder 'AlexNetFC6Extract', namely:
+To Train and test a VERAM model, 3 data files need to be prepared according to the instruction in the folder 'AlexNetFC6Extract', namely:
 ```
     (1) The visual features for each view of shapes in the training set
     (2) The visual features for each view of shapes in the testing set
