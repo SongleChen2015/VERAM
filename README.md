@@ -46,8 +46,8 @@ We have provided the prepared the training and testing data of ModelNet10, the t
 ### Train 
 To train a VERAM model to classify 3D shapes in ModelNet10 or ModelNet40, please download data files according to the instrction in fold 'data', and then run:
 ```
-     (1) $ th ModelNet10AlexTrain.lua 
-     (2) $ th ModelNet10AlexTrain.lua
+  (1) $ th ModelNet10AlexTrain.lua 
+  (2) $ th ModelNet10AlexTrain.lua
 ```
  
  
@@ -58,12 +58,12 @@ The trained VERAM models with 3, 6, 9 views respectively can be downloaded accor
 ```
 You can see the details of the classification result, including the predicated category and probability of each shape, the total number, correctly classified number and accuracy of each category.
 
-Below are the classification results VERAM achieved on ModelNet40 test data.
+Taking rendered grayscale image as input and AlexNet as CNN architecture, without applying any data augmentation or network ensemble strategy, the classification results VERAM achieved on ModelNet40 test data are listed below.
 
 |   Accuracy     |  3 views  |  6 views  |  9 views  |
 | -------------- |:---------:|:---------:|:---------:|
 | instance-level | 92.3825%  | 93.3144%  |  93.7196% | 
-|  class-level   | 90.8087%  | 91.6291%  |  92.1244% |
+|   class-level  | 90.8087%  | 91.6291%  |  92.1244% |
 
 
 ## Acknowledgement
