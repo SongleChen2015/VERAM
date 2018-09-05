@@ -24,7 +24,7 @@
     
     (6) ModelNet40_Test_ModelName.txt
     
-    --the model name of each shape in the testing set of ModelNet40
+    --the name of each shape in the testing set of ModelNet40
     
     (7) ModelNet40Align.zip
     
