@@ -59,6 +59,7 @@ The trained VERAM models with 3, 6, 9 views respectively can be downloaded accor
 ```
 You can see the details of the classification result, including the predicated category and probability of each shape, the total number, correctly classified number and accuracy of each category.
 
+## Results
 Taking rendered grayscale image as input and AlexNet as CNN architecture, without applying any data augmentation or network ensemble strategy, the classification results VERAM achieved on ModelNet40 test data are listed below.
 
 |   Accuracy     |  3 views  |  6 views  |  9 views  |
