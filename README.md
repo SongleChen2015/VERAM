@@ -36,7 +36,7 @@ To Train and test a VERAM model, 3 data files need to be prepared according to t
 ```
     (1) The visual features for each view of shapes in the training set
     (2) The visual features for each view of shapes in the testing set
-    (3) The confidence for each view of shapes in the training set.
+    (3) The confidence for each view of shapes in the training set
 ```
 The format of the data is hdf5 and each shape category is saved in the dataset 'data\i', i is the category index. The data structure is 'number of shapes in this category'x12x12x4096, and the data is loaded by imageset2DwithConf.lua.
 
